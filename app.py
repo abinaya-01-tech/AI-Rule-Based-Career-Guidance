@@ -10,7 +10,7 @@ def home():
         session['name'] = request.form['name']
         session['age'] = int(request.form['age'])
         if session['age'] < 0:
-                return "Invalid age"
+            return "Invalid age"
         session['email'] = request.form['email']
         return redirect(url_for('quiz'))
     return render_template('home.html')
@@ -21,11 +21,11 @@ def quiz():
     if request.method == 'POST':
         # Initialize scores
         logic = creativity = communication = leadership = tech = 0
-        answers = ['q1','q2','q3','q4','q5','q6']
+        answers = ['q1','q2','q3','q4','q5','q6','q7','q8']
 
         for q in answers:
             ans = request.form[q].upper()
-            if q in ['q1','q3','q4']:
+            if q in ['q1','q3','q4','q7']:
                 if ans == 'A':
                     logic += 1
                 elif ans == 'B':
@@ -34,7 +34,7 @@ def quiz():
                     communication += 1
                 elif ans == 'D':
                     leadership += 1
-            elif q in ['q2','q5','q6']:
+            elif q in ['q2','q5','q6','q8']:
                 if ans == 'A':
                     tech += 1
                 elif ans == 'B':
