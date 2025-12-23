@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Career Guidance Quiz</title>
+
+    <!-- ✅ Link external CSS -->
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<!-- ✅ IMPORTANT: bg class added -->
+<body class="bg">
+
+    <div class="card">
+        <h2>Career Guidance Questionnaire for Students</h2>
+
+        <form action="/quiz" method="POST">
+
+            <!-- Q1 -->
+            <div class="question">
+                <p>1. In a group assignment, which role do you naturally take?</p>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="A" required> A) Working on calculations, code, or technical parts</label>
+                    <label><input type="radio" name="q1" value="B"> B) Designing slides, posters, or visuals</label>
+                    <label><input type="radio" name="q1" value="C"> C) Explaining ideas and helping teammates understand</label>
+                    <label><input type="radio" name="q1" value="D"> D) Organizing tasks and making sure everyone stays on track</label>
+                </div>
+            </div>
+
+            <!-- Q2 -->
+            <div class="question">
+                <p>2.Which school activity would you enjoy the MOST?</p>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="A" required> A) Solving challenging math or science problems</label>
+                    <label><input type="radio" name="q2" value="B"> B) Participating in art, media, or creative competitions</label>
+                    <label><input type="radio" name="q2" value="C"> C) Helping classmates or participating in peer learning</label>
+                    <label><input type="radio" name="q2" value="D"> D) Leading a team for an event or competition</label>
+                </div>
+            </div>
+
+            <!-- Q3 -->
+            <div class="question">
+                <p>3.When learning a new topic, what helps you understand best?</p>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="A" required> A) Step-by-step logical explanations</label>
+                    <label><input type="radio" name="q3" value="B"> B) Trying things out and experimenting creatively</label>
+                    <label><input type="radio" name="q3" value="C"> C) Discussing and sharing ideas with others</label>
+                    <label><input type="radio" name="q3" value="D"> D) Planning study schedules and setting learning goals</label>
+                </div>
+            </div>
+
+            <!-- Q4 -->
+            <div class="question">
+                <p>4.If your class is given a project deadline, what is your first focus?</p>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="A" required> A) Understanding the technical requirements clearly</label>
+                    <label><input type="radio" name="q4" value="B"> B) Thinking of unique ideas to stand out</label>
+                    <label><input type="radio" name="q4" value="C"> C) Making sure everyone understands their part</label>
+                    <label><input type="radio" name="q4" value="D"> D) Dividing work and managing time effectively</label>
+                </div>
+            </div>
+
+            <!-- Q5 -->
+            <div class="question">
+                <p>5.Which type of achievement would make you feel most satisfied?</p>
+                <div class="options">
+                    <label><input type="radio" name="q5" value="A" required> A) Successfully fixing a complex technical problem</label>
+                    <label><input type="radio" name="q5" value="B"> B) Visuals, art, or creative ideas</label>
+                    <label><input type="radio" name="q5" value="C"> C) A clear explanation that helps others understand</label>
+                    <label><input type="radio" name="q5" value="D"> D) Guiding a team to complete a project successfully</label>
+                </div>
+            </div>
+
+            <!-- Q6 -->
+            <div class="question">
+                <p>6.During school events or activities, you prefer to be the one who…/p>
+                <div class="options">
+                    <label><input type="radio" name="q6" value="A" required> A) Works behind the scenes on technical tasks</label>
+                    <label><input type="radio" name="q6" value="B"> B) Adds creativity and visual appeal</label>
+                    <label><input type="radio" name="q6" value="C"> C) Communicates and supports others</label>
+                    <label><input type="radio" name="q6" value="D"> D) Takes responsibility and leads the group</label>
+                </div>
+            </div>
+
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

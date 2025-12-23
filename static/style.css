@@ -1,0 +1,200 @@
+body.bg {
+    background-image: url("/static/doodle.png");
+    background-repeat: repeat;
+    background-position: top left;
+    font-size: 18px;
+    /* THIS IS THE KEY FIX 👇 */
+    background-size: 500px 500px;
+}
+body.bg::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.35);
+    z-index: -1;
+}
+/* ===================== PAGE HEADING ===================== */
+h1, h2, h3 {
+    text-align: center;
+    margin-top: 20px;
+}
+.main-header {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.tagline {
+    font-size: 22px;
+    color: #000000;
+    font-weight: medium;
+}
+
+/* ===================== CARD CONTAINER ===================== */
+.card {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 25px;
+
+    background: rgba(255, 255, 255, 0.95); /* lets doodle show softly */
+    border-radius: 12px;
+
+    box-shadow: 0 8px 20px rgba(189, 78, 78, 0.15);
+}
+
+/* ===================== FORM ===================== */
+form {
+    margin-top: 20px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* ===================== BUTTON ===================== */
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+
+    background-color: #413f3f;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+/* ===================== RESULT PAGE ===================== */
+.result {
+    text-align: left;
+    margin-top: 20px;
+}
+/* ===================== HOME PAGE CARD ===================== */
+.home-card {
+    width: 400px;           /* smaller width */
+    max-width: 90%;         /* responsive for small screens */
+    padding: 20px;
+    margin: 50px auto;
+
+    background: rgba(255, 255, 255, 0.95); /* lets doodle show softly */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(189, 78, 78, 0.15);
+
+    font-size: 16px;
+}
+
+.home-card label {
+    font-size: 16px;        /* bigger than before */
+    font-weight: 600;       /* makes text strong (bold) */
+    margin-top: 12px;
+    display: block;
+    color: #333;            /* darker for better visibility */
+}
+
+.home-card input[type="text"],
+.home-card input[type="number"],
+.home-card input[type="email"] {
+    width: 100%;
+    padding: 6px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+
+    border: 1px solid #888;   /* final border color */
+    font-size: 14px;
+    outline: none;            /* removes blue outline */
+}
+
+
+/* ===================== START BUTTON ===================== */
+.home-card button.next-btn {
+    width: auto;               /* button width fits content */
+    padding: 8px 20px;         /* smaller, comfortable size */
+    font-size: 14px;
+    margin: 15px auto 0;       /* top margin + center horizontally */
+    display: block;            /* needed for margin auto to center */
+
+    background-color: #413f3f;
+    color: white;
+    border: 1px solid black;   /* solid border */
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.home-card button.next-btn:hover {
+    background-color: #000000;
+}
+/* ===== REMOVE CHROME AUTOFILL BLUE ===== */
+.home-card input:-webkit-autofill,
+.home-card input:-webkit-autofill:hover,
+.home-card input:-webkit-autofill:focus,
+.home-card input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+    -webkit-text-fill-color: #000 !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+/* ===================== ELEGANT CARD EFFECT ===================== */
+.card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 14px;
+
+    /* soft, polite shadow */
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.12);
+
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* very gentle hover */
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 14px 40px rgba(0, 0, 0, 0.16);
+}
+body {
+    font-family: 'Merriweather', Georgia, serif; /* Classic body text */
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+h1,h2,h3 {
+    font-family: 'Playfair Display', Baskerville, serif; /* Elegant headings */
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
